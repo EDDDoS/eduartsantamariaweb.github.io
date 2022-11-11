@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="src/static/img/logo_white_ico.ico">
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/static/css/main.css">
+    <link rel="stylesheet" href="src/static/css/nav.css">
+    <link rel="stylesheet" href="src/static/css/content.css">
+    <link rel="stylesheet" href="src/static/css/normalize.css">
+    <link rel="stylesheet" href="src/static/css/hover.css">
+    <!-- Raleway Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap" rel="stylesheet">
+    <!-- Font Tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/0239039983.js" crossorigin="anonymous"></script>
+    <title>Portfolio Web</title>
+</head>
+<body>
+    <div class="responsive-menu">
+        <a onclick="menuActive();" class="hvr-underline-from-center" href="#inicio">Inicio</a>
+        <a onclick="menuActive();" class="hvr-underline-from-center" href="#proyectos">Proyectos</a>
+        <a onclick="menuActive();" class="hvr-underline-from-center" href="#acerca">Acerca de mí</a>
+        <a onclick="menuActive();" class="hvr-underline-from-center" href="#imagen">Imagen</a>
+        <a onclick="menuActive();" class="hvr-underline-from-center" href="#contacto">Contacto</a>
+        <a onclick="menuActive();" class="close" href="#">X</a>
+    </div>
+
+    <div class="container">
+        <canvas id="c"></canvas>
+        <!-- Theme Buttons Container -->
+        <!-- <div class="colors">
+             <p class="theme-buttons" data-color="#A60A17" style="background: #A60A17;" >.</p>
+             <p class="theme-buttons" data-color="#A747F5" style="background: #A747F5;" >.</p>
+             <p class="theme-buttons" data-color="#4B84DE" style="background: #4B84DE;" >.</p>
+             <p class="theme-buttons" data-color="#47F5BD" style="background: #47F5BD;" >.</p>
+             <p class="theme-buttons" data-color="#83EB44" style="background: #83EB44;" >.</p>
+        </div> -->
+
+        <a class="indicator sect-1 sect-width" href="#inicio"></a>
+        <a class="indicator sect-2" href="#proyectos"></a>
+        <a class="indicator sect-3" href="#acerca"></a>
+        <a class="indicator sect-4" href="#imagen"></a>
+        <a class="indicator sect-5" href="#contacto"></a>
+        <a class="indicator sect-6" href="#inicio"></a>
+            <header>
+                <nav class="menu">
+                    <div class="menu_name">
+                        <a href="#inicio"><img src="src/static/img/logo_nobg_white.png" alt=""></a>
+                    </div>
+                    <div class="menu_options">
+                        <a class="hvr-underline-from-center" href="#inicio">Inicio</a>
+                        <a class="hvr-underline-from-center" href="#proyectos">Proyectos</a>
+                        <a class="hvr-underline-from-center" href="#acerca">Acerca de mí</a>
+                        <a class="hvr-underline-from-center" href="#imagen">Imagen</a>
+                        <a class="" href="#contacto">Contacto</a>
+                        <span id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </nav>
+            </header>
+            <section class="resume" id="inicio">
+                <div class="scroll">
+                    <p><span><</span>Scroll Down</p>
+                </div>
+                <div class="content">
+                    <h1><span class="hvr-grow">Eduardo</span><br><span class="hvr-grow">Santamaria</span></h1>
+                    <h4>Frontend Developer</h4>
+                    <p class="decoration"></p>
+                    <p class="resumen">¡Hola! Mi nombres es Eduardo, desarrollador y diseñador Frontend con gusto y pasión por el mundo creativo y la mejor experiencia de usuario.</p>
+                </div>
+            </section>
+    
+            <section class="projects" id="proyectos">
+                <div class="content">
+                    <h2>Proyectos</h2>
+                    <div class="box">
+                        <div class="text">
+                            <h3>API Clima</h3>
+                            <p>Sitio web que permite consultar el clima a través de la api openweather.</p>
+                            <div class="btn">
+                                <a href="https://edddos.github.io/weatherapi.github.io/" target="_blank">Visitar</a>
+                            </div>
+                        </div>
+                        <img src="src/static/img/weather.png" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Viajes de Negocios</h3>
+                            <p>Sitio web con temática orientada hacia los viajes de negocios.</p>
+                            <div class="btn">
+                                <a href="https://edddos.github.io/travel.github.io/" target="_blank">Visitar</a>
+                            </div>
+                        </div>
+                        <img src="src/static/img/travel.png" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Clon de Twitter</h3>
+                            <p>Maqueta web realizada con el fin de crear una copia de la red social "Twitter".</p>
+                            <div class="btn">
+                                <a href="https://edddos.github.io/" target="_blank">Visitar</a>
+                            </div>
+                        </div>
+                        <img src="src/static/img/twitter.png" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Portfolio Web (Concepto)</h3>
+                            <p>Portfolio web creado como un concepto, pues al final no fue el diseño elegido.</p>
+                            <div class="btn">
+                                <a href="https://edddos.github.io/EDDDoSportfolio.github.io/" target="_blank">Visitar</a>
+                            </div>
+                        </div>
+                        <img src="src/static/img/portfolio.png" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Funimation</h3>
+                            <p>Este sitio web simula ser el famoso sitio de streaming Funimation.</p>
+                            <div class="btn">
+                                <a href="https://edddos.github.io/EDDDosAnime.github.io/" target="_blank">Visitar</a>
+                            </div>
+                        </div>
+                        <img src="src/static/img/anime.png" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Random Cats</h3>
+                            <p>Pequeño sitio que tiene como función generar imágenes aleatorias de gatos a través del llamado de una API.</p>
+                            <div class="btn">
+                                <a href="https://edddos.github.io/randomcat.github.io/" target="_blank">Visitar</a>
+                            </div>
+                        </div>
+                        <img src="src/static/img/random_cats.png" alt="">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="about_me" id="acerca">
+                <div class="content">
+                    <h2>¡Hola!</h2>
+                    <div class="avatar">
+                        <img src="src/static/img/1652316149303.jfif" alt="">
+                    </div>
+                    <p>
+                        ¡Saludos! Mi nombre es Eduardo, nací en Ciudad de México y actualmente me dedico al desarrollo Web Frontend, soy un gran apasionado por brindar la mejor experiencia de usuario sin descuidar el diseño de interfaces brindando diseños elegantes y minimalistas o según se requiera.
+                    </p>
+                    <p>
+                        Cuento también con experiencia en el diseño para el sistema <img src="src/static/img/odoo_logo.png" alt="">, he trabajado en sus versiones 13 y 15 para diversos proyectos, algunos de los clientes fueron Rotoplas y Grupo Salinas utilizando las principales tecnologías de JavaScript y Sass.
+                    </p>
+                    <p>
+                        Cuento también con conocimientos en el diseño de interfaces y prototipos a través del Software Adobe Xd y Adobe Photoshop.
+                    </p>
+                </div>
+                <div class="skills">
+                    <div class="hvr-float card html">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="hvr-float card css">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="hvr-float card sass">
+                        <p>Sass</p>
+                    </div>
+                    <div class="hvr-float card less">
+                        <p>less</p>
+                    </div>
+                    <div class="hvr-float card bootstrap">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="hvr-float card javascript">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="hvr-float card figma">
+                        <p>Figma</p>
+                    </div>
+                    <div class="hvr-float card xd">
+                        <p>Adobe Xd</p>
+                    </div>
+                    <div class="hvr-float card ps">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                    <div class="hvr-float card illustrator">
+                        <p>Adobe Illustrator</p>
+                    </div>
+                    <div class="hvr-float card ux">
+                        <p>UX/UI</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="imagen" id="imagen">
+                <div class="content img">
+                    <h2>Edición de imagen e ilustración digital y vectorial.</h2>
+                    <div class="img-content">
+                        <img src="src/static/img/skills_5.png" alt="">
+                        <img src="src/static/img/skills_6.png" alt="">
+                        <img src="src/static/img/krita_icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="content ptt">
+                    <h2>Desarrollo de interfaces y prototipos web.</h2>
+                    <div class="img-content">
+                        <img src="src/static/img/skills_7.png" alt="">
+                        <img src="src/static/img/skills_9.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacto" id="contacto">
+                <div class="content">
+                    <h2>Contacto</h2>
+                    <p>¿Quieres platicar o tienes alguna pregunta? ¡Con gusto podemos hablar!</p>
+                    <div class="redes">
+                        <a href="https://wa.me/525581344961"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/-eduardosantamaria/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:eduardo.sta@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>Sitio creado por Eduardo Santamaria</p>
+                <p>2022.</p>
+            </footer>
+    </div>
+    <script src="src/static/js/main.js"></script>
+</body>
+</html>
